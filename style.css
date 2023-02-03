@@ -1,0 +1,252 @@
+/* Layout
+======================================
+*/
+
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(img/capa.png), url(img/ruido.png), linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment:fixed ;
+    font-family: helvetica, Arial, sans-serif;
+}
+
+/* NAV
+=======================================
+*/
+
+.transparencia {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0px;
+}
+
+#nav-principal ul li a {
+    color: white;
+}
+
+#nav-principal ul li a:hover {
+    color: #9bf0e1;
+}
+
+#hamburguer {
+    border-color: rgba(255, 255, 255, 0.0);
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 20px;
+}
+
+/*
+CAPA
+=============================*/
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 15px;
+}
+
+.btn-roxo {
+    background: #7c25f8;
+}
+
+.btn-roxo:hover {
+    background: #4805a5;
+    color: white;
+}
+
+.btn-branco {
+    border:2px solid white;
+}
+
+.btn-branco:hover {
+    background: white;
+    color: black;
+}
+
+/*
+CAROUSEL
+====================================*/
+
+.carousel-control-prev, .carousel-control-next {
+    width: 1%;
+}
+
+/*
+Conteudos
+====================================*/
+
+#servicos {
+    background-color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+
+#recursos {
+    padding: 20px 0px 20px 0px;
+}
+
+#recursos h2 {
+    color: white;
+}
+
+#recursos p {
+    color: white;
+}
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+#texto {
+    padding-top: 9px;
+}
+
+.albuns {
+    padding-top: 20px;
+}
+
+.rotacionar {
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/*
+FOOTER
+==============================*/
+
+footer {
+    background-color: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    font-size: .8em;
+    color: white;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 10px;
+}
+
+/*
+TIPOGRAFIA
+==============================*/
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h2,h3,p {
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    h2,h3,p {
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .btn-custom {
+        margin: 10px 150px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    .btn-custom {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    .btn-custom {
+        margin: 0px 20px 0px 20px;
+    }
+}
